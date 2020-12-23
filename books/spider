@@ -1,0 +1,8 @@
+var request = require('request');
+
+request({
+    uri: 'http://httpbin.scrapinghub.com/get',
+    proxy: 'http://3f3819933c294d23b1e179c8b4d984ea:@proxy.crawlera.com:8010'
+}, function callback(error, response, body) {
+    console.log(body);
+});
